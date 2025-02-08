@@ -18,9 +18,11 @@ jobs:
 
       - name: Run a one-line script
         run: echo Hello, world!
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v4.2.0
+      - run: npm install
 
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+          
+          
+
           
