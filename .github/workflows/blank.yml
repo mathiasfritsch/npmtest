@@ -21,7 +21,9 @@ jobs:
       - name: Setup Node.js environment
         uses: actions/setup-node@v4.2.0
       - run: npm install
+        working-directory: ./ClientApp
       - run: npm run build
+        working-directory: ./ClientApp
 
           
           
